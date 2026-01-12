@@ -97,23 +97,30 @@
       <label><input type="radio" name="q2" value="D"> What feels right to you</label>
     </div>
 
-    <script>
-      const questions = 20;
-      const form = document.getElementById("quizForm");
+<div class="question">
+  <p>3. In group settings, you usually…</p>
+  <label><input type="radio" name="q3" value="A"> Blend in to avoid attention</label>
+  <label><input type="radio" name="q3" value="B"> Stay quiet even when you have opinions</label>
+  <label><input type="radio" name="q3" value="C"> Speak when you feel confident</label>
+  <label><input type="radio" name="q3" value="D"> Express yourself freely</label>
+</div>
 
-      for (let i = 3; i <= questions; i++) {
-        const div = document.createElement("div");
-        div.className = "question";
-        div.innerHTML = `
-          <p>${i}. Question ${i}</p>
-          <label><input type="radio" name="q${i}" value="A"> Option A</label>
-          <label><input type="radio" name="q${i}" value="B"> Option B</label>
-          <label><input type="radio" name="q${i}" value="C"> Option C</label>
-          <label><input type="radio" name="q${i}" value="D"> Option D</label>
-        `;
-        form.appendChild(div);
-      }
-    </script>
+<div class="question">
+  <p>4. How often do you feel like you’re “performing” who you are?</p>
+  <label><input type="radio" name="q4" value="A"> Almost always</label>
+  <label><input type="radio" name="q4" value="B"> Often</label>
+  <label><input type="radio" name="q4" value="C"> Sometimes</label>
+  <label><input type="radio" name="q4" value="D"> Rarely</label>
+</div>
+
+<div class="question">
+  <p>5. When you make mistakes, you worry most about…</p>
+  <label><input type="radio" name="q5" value="A"> What others will think</label>
+  <label><input type="radio" name="q5" value="B"> Letting people down</label>
+  <label><input type="radio" name="q5" value="C"> Learning from it</label>
+  <label><input type="radio" name="q5" value="D"> Moving forward</label>
+</div>
+
 
     <button type="button" onclick="calculateResult()">See My Result</button>
   </form>
